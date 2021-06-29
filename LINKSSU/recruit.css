@@ -1,0 +1,36 @@
+@import url(common.css);
+
+.main {
+  background-color: rgb(247, 247, 247);
+  height: 100%;
+  display: inline-block;
+}
+
+.main .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 0 70px;
+  background-color: white;
+}
+
+.title {
+  margin-top: 20px;
+  width: 89%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.title a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.title a:first-child:after {
+  content: "|";
+  padding: 0 20px;
+  color: black;
+}
+.title a.active {
+  color: rgb(37, 84, 238);
+}

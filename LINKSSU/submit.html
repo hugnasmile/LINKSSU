@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/069f611680.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="submit.css"> 
+    <title>LINKSSU</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><strong>LINKSSU</strong></a>
+        </div>
+        <nav class="nav-bar">
+            <ul class="nav">
+                <li><a href="find.html" class="active">팀원찾기</a></li>
+                <li><a href="recruit.html">팀원모집</a></li>
+                <li><a href="contest.html">공모전</a></li>
+            </ul>
+            <ul class="icons">
+                <i class="far fa-comment-alt"></i>
+                <i class="far fa-bell"></i>
+                <i class="far fa-heart"></i>
+            </ul>
+            <div class="name">
+                <i class="far fa-user-circle"></i>
+                <p>김숭실님</p>
+            </div>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="profile-detail">
+            <h4>프로필</h4>
+            <div class="profile-pic">
+                <div class="big-thumb">
+                    <img src="content/profile.png" class="big" alt="">
+                </div>
+                <div class="small-thumbs">
+                    <img src="content/profile2.png" class="small" alt="">
+                    <img src="content/profile3.png" class="small" alt="">
+                    <img src="content/profile.png" class="small" alt="">
+                </div>
+            </div>
+            <ul class="info">
+                <li class="name">
+                    <label for="name">이름</label>
+                    <input type="text" id="name">
+                </li>
+                <li class="major">
+                    <label for="major">전공</label>
+                    <input type="text" id="major">
+                </li>
+                <li class="grade">
+                    <label for="grade">학년</label>
+                    <input type="radio" name="grade" id="1"><label for="1">1학년</label>
+                    <input type="radio" name="grade" id="2"><label for="2">2학년</label>
+                    <input type="radio" name="grade" id="3"><label for="3">3학년</label>
+                    <input type="radio" name="grade" id="4"><label for="4">4/5학년</label>
+                </li>
+                <li class="email">
+                    <label for="email">이메일</label>
+                    <input type="email" id="email" size="30">
+                </li>
+                <li class="phone">
+                    <label for="phone">전화번호</label>
+                    <input type="tel" id="phone">
+                </li>
+                <li class="check">
+                    <label for="check">관심있는 활동</label>
+                    <input type="checkbox" id="contest"><label for="contest">공모전</label>
+                    <input type="checkbox" id="class"><label for="class">수업팀플</label>
+                </li>
+                <li class="mbti">
+                    <label for="check">MBTI</label>
+                    <form name="mbti">
+                        <select id="mbti">
+                            <option value=null>MBTI</option>
+                            <option value="INTJ">INTJ</option>
+                            <option value="INTP">INTP</option>
+                            <option value="ENTJ">ENTJ</option>
+                            <option value="ENTP">ENTP</option>
+                            <option value="INFJ">INFJ</option>
+                            <option value="INFP">INFP</option>
+                            <option value="ENFJ">ENFJ</option>
+                            <option value="ENFP">ENFP</option>
+                            <option value="ISTJ">ISTJ</option>
+                            <option value="ISFJ">ISFJ</option>
+                            <option value="ESTJ">ESTJ</option>
+                            <option value="ESFJ">ESFJ</option>
+                            <option value="ISTP">ISTP</option>
+                            <option value="ISFP">ISFP</option>
+                            <option value="ESTP">ESTP</option>
+                            <option value="ESFP">ESFP</option>
+                        </select>
+                    </form>
+                </li>
+                <li class="skills">
+                    <label for="skills">활용 능력</label>
+                    <input type="checkbox" name="skills" id="PPT"><label for="PPT">PPT</label>
+                    <input type="checkbox" name="skills" id="엑셀"><label for="엑셀">엑셀</label>
+                    <input type="checkbox" name="skills" id="워드"><label for="워드">워드</label>
+                    <input type="checkbox" name="skills" id="포토샵"><label for="포토샵">포토샵</label>
+                    <input type="checkbox" name="skills" id="일러스트"><label for="일러스트">일러스트</label>
+                    <input type="checkbox" name="skills" id="JAVA"><label for="JAVA">JAVA</label>
+                    <input type="checkbox" name="skills" id="기획"><label for="기획">기획</label>
+                    <input type="checkbox" name="skills" id="UXUI"><label for="UXUI">UXUI</label>
+                    <input type="checkbox" name="skills" id="JavaScript"><label for="JavaScript">JavaScript</label>
+                    <input type="checkbox" name="skills" id="마케팅"><label for="마케팅">마케팅</label>
+                    <input type="checkbox" name="skills" id="Front-End"><label for="Front-End">Front-End</label>
+                    <input type="checkbox" name="skills" id="Back-End"><label for="Back-End">Back-End</label>
+                    <input type="checkbox" name="skills" id="GitHub"><label for="GitHub">GitHub</label>
+                    <input type="checkbox" name="skills" id="영상편집"><label for="영상편집">영상편집</label>
+                </li>
+                <li class="interest">
+                    <label for="interest">관심 분야</label>
+                    <input type="checkbox" name="interest" id="경영"><label for="경영">경영</label>
+                    <input type="checkbox" name="interest" id="마케팅"><label for="마케팅">마케팅</label>
+                    <input type="checkbox" name="interest" id="광고"><label for="광고">광고</label>
+                    <input type="checkbox" name="interest" id="회계"><label for="회계">회계</label>
+                    <input type="checkbox" name="interest" id="영업"><label for="영업">영업</label>
+                    <input type="checkbox" name="interest" id="서비스"><label for="서비스">서비스</label>
+                    <input type="checkbox" name="interest" id="의료"><label for="의료">의료</label>
+                    <input type="checkbox" name="interest" id="건설"><label for="건설">건설</label>
+                    <input type="checkbox" name="interest" id="생산/제작"><label for="생산/제작">생산/제작</label>
+                    <input type="checkbox" name="interest" id="유통/무역"><label for="유통/무역">유통/무역</label>
+                    <input type="checkbox" name="interest" id="미디어"><label for="미디어">미디어</label>
+                    <input type="checkbox" name="interest" id="정치"><label for="정치">정치</label>
+                    <input type="checkbox" name="interest" id="사회"><label for="사회">사회</label>
+                </li>
+                <li class="building">
+                    <label for="building">자주 가는 건물</label>
+                    <input type="checkbox" name="building" id="베어드홀"><label for="베어드홀">베어드홀</label>
+                    <input type="checkbox" name="building" id="숭덕경상관"><label for="숭덕경상관">숭덕경상관</label>
+                    <input type="checkbox" name="building" id="문화관"><label for="문화관">문화관</label>
+                    <input type="checkbox" name="building" id="안익태기념관"><label for="안익태기념관">안익태기념관</label>
+                    <input type="checkbox" name="building" id="형남공학관"><label for="형남공학관">형남공학관</label>
+                    <input type="checkbox" name="building" id="교육관"><label for="교육관">교육관</label>
+                    <input type="checkbox" name="building" id="백마관"><label for="백마관">백마관</label>
+                    <input type="checkbox" name="building" id="한경직기념관"><label for="한경직기념관">한경직기념관</label>
+                    <input type="checkbox" name="building" id="신양관"><label for="신양관">신양관</label>
+                    <input type="checkbox" name="building" id="벤처중소기업센터"><label for="벤처중소기업센터">벤처중소기업센터</label>
+                    <input type="checkbox" name="building" id="진리관"><label for="진리관">진리관</label>
+                    <input type="checkbox" name="building" id="조만식기념관"><label for="조만식기념관">조만식기념관</label>
+                    <input type="checkbox" name="building" id="중앙도서관"><label for="중앙도서관">중앙도서관</label>
+                    <input type="checkbox" name="building" id="연구관"><label for="연구관">연구관</label>
+                    <input type="checkbox" name="building" id="창신관"><label for="창신관">창신관</label>
+                    <input type="checkbox" name="building" id="전산관"><label for="전산관">전산관</label>
+                    <input type="checkbox" name="building" id="미래관"><label for="미래관">미래관</label>
+                    <input type="checkbox" name="building" id="정보과학관"><label for="정보과학관">정보과학관</label>
+                    <input type="checkbox" name="building" id="웨스터민스터홀"><label for="웨스터민스터홀">웨스터민스터홀</label>
+                    <input type="checkbox" name="building" id="학생회관"><label for="학생회관">학생회관</label>
+                </li> 
+                <li class="text">
+                    <label for="text">자기소개</label>
+                    <textarea cols="50" rows="10" id="text" placeholder="추가하고 싶은 내용이 있으면 적어주세요 :) &#13;&#10;예) 활동중인 동아리 등"></textarea>
+                </li>
+            </ul>
+            <button class="submit"><a href="find.html">등록하기</a></button>         
+        </div>
+    </div>
+    <script src="main.js"></script>
+    </body>
+    </html>
