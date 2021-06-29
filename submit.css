@@ -1,0 +1,120 @@
+@import url(common.css);
+
+.main {
+  background-color: rgb(247, 247, 247);
+}
+
+.profile-detail {
+  position: relative;
+  background-color: white;
+  width: 40%;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.profile-detail h4 {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: rgb(138, 138, 138);
+}
+.profile-detail h4:before {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  border-bottom: 2px solid rgb(136, 136, 136);
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.profile-pic {
+  position: absolute;
+  right: 60px;
+  top: 70px;
+}
+.profile-pic .big-thumb img {
+  width: 200px;
+}
+.profile-pic .small-thumbs img {
+  width: 70px;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  border: none;
+  border-bottom: 2px solid rgb(87, 87, 87);
+  outline: none;
+}
+label {
+  font-size: 1.2rem;
+  padding-right: 20px;
+  display: inline-block;
+}
+
+form {
+  display: inline-block;
+}
+form select {
+  outline: none;
+  font-size: 1.1rem;
+  border: 2px solid rgb(133, 133, 133);
+  border-radius: 10px;
+  padding: 5px;
+}
+.main li {
+  padding-bottom: 30px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+  font-size: 1.1rem;
+  color: rgb(80, 80, 80);
+  border: 2px solid rgb(133, 133, 133);
+  border-radius: 10px;
+  padding: 5px 7px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.grade input[type="radio"] + label {
+  margin-bottom: 0;
+}
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label {
+  border: 2px solid rgb(37, 84, 238);
+  color: rgb(37, 84, 238);
+}
+
+.text label {
+  padding-bottom: 10px;
+}
+.text #text {
+  font-family: "NanumBarunGothic";
+  display: block;
+  border: 2px solid rgb(133, 133, 133);
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  resize: none;
+}
+
+button.submit {
+  float: right;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgb(37, 84, 238);
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+button.submit a {
+  color: white;
+}
