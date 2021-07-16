@@ -85,12 +85,18 @@
                     <input type="checkbox" name="skills" id="Back-End"><label for="Back-End">Back-End</label>
                     <input type="checkbox" name="skills" id="GitHub"><label for="GitHub">GitHub</label>
                     <input type="checkbox" name="skills" id="영상편집"><label for="영상편집">영상편집</label>
+                    <ul id="target"></ul>
+                    <div class="add-keyword">
+                        <label for="keyword">키워드 추가하기</label>
+                        <input type="text" id="keyword">
+                        <input type="button" onclick="callAppendChild()" value="+">
+                    </div>
                 </li>
                 <li class="interest">
-                    <label for="interest">우대사항</label>
+                    <label for="interest">관심분야</label>
                     <input type="checkbox" name="interest" id="경영"><label for="경영">경영</label>
-                    <input type="checkbox" name="interest" id="마케팅"><label for="마케팅">마케팅</label>
-                    <input type="checkbox" name="interest" id="광고"><label for="광고">광고</label>
+                    <input type="checkbox" name="interest" id="마케팅" checked><label for="마케팅">마케팅</label>
+                    <input type="checkbox" name="interest" id="광고" checked><label for="광고">광고</label>
                     <input type="checkbox" name="interest" id="회계"><label for="회계">회계</label>
                     <input type="checkbox" name="interest" id="영업"><label for="영업">영업</label>
                     <input type="checkbox" name="interest" id="서비스"><label for="서비스">서비스</label>
