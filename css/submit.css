@@ -112,6 +112,39 @@ input[type="checkbox"]:checked + label {
   width: 300px;
 }
 
+#target,
+#target li {
+  display: inline-block;
+}
+#target li {
+  font-size: 1.1rem;
+  color: rgb(37, 84, 238);
+  border: 2px solid rgb(37, 84, 238);
+  border-radius: 10px;
+  padding: 5px 7px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#target li button {
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding-left: 7px;
+  cursor: pointer;
+}
+
+.add-keyword input[type="button"] {
+  font-size: 1.1rem;
+  color: rgb(37, 84, 238);
+  background-color: white;
+  border: 2px solid rgb(37, 84, 238);
+  padding: 0 3px;
+  cursor: pointer;
+}
+
 button.submit {
   float: right;
   font-size: 1.2rem;
