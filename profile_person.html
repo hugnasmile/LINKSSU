@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/069f611680.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="profile.css"> 
+    <link rel="stylesheet" href="css/profile.css"> 
     <title>LINKSSU</title>
 </head>
 <body>
@@ -17,8 +17,8 @@
         </div>
         <nav class="nav-bar">
             <ul class="nav">
-                <li><a href="find.html" class="active">팀원찾기</a></li>
-                <li><a href="recruit.html">팀원모집</a></li>
+                <li><a href="find_contest.html" class="active">팀원찾기</a></li>
+                <li><a href="recruit_contest.html">팀원모집</a></li>
                 <li><a href="contest.html">공모전</a></li>
             </ul>
             <ul class="icons">
@@ -27,13 +27,16 @@
                 <i class="far fa-heart"></i>
             </ul>
             <div class="name">
-                <i class="far fa-user-circle"></i>
-                <p>김숭실님</p>
+                <a href="#">
+                    <img src="content/profile4.png" alt="">
+                    <p>김숭실님</p>
+                </a>
             </div>
         </nav>
     </header>
     <div class="main">
         <div class="profile-detail">
+            <h4>프로필</h4>
             <div class="person">
                 <div class="profile-pic">
                     <img src="content/profile.png" alt="">
@@ -93,6 +96,10 @@
                     <p>디지털 스토리텔링</p>
                 </div>
             </div>
+            <a href="find_contest.html" class="back-Btn">
+                <i class="fas fa-arrow-circle-left"></i>
+                <p>목록으로 돌아가기</p>
+            </a>
         </div>
     </div>
     <script src="main.js"></script>

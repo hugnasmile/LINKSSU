@@ -17,6 +17,8 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-self: baseline;
+  padding-top: 50px;
 }
 .profile-detail .person .profile-pic {
   position: relative;
@@ -46,15 +48,40 @@
   margin-top: 20px;
   cursor: pointer;
 }
+.profile-detail .person .revise-btn {
+  outline: none;
+  border: 2px solid grey;
+  color: grey;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
 
 .profile-detail {
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   background-color: white;
   width: 70%;
   margin: 0 auto;
-  padding: 20px 0;
+  height: 100%;
+}
+.profile-detail h4 {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: rgb(138, 138, 138);
+}
+.profile-detail h4:before {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  border-bottom: 2px solid rgb(136, 136, 136);
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 .profile-detail div + div {
@@ -62,18 +89,29 @@
 }
 .profile-detail h3 {
   display: block;
-  color: rgb(37, 84, 238);
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 .profile-detail .hash li {
   display: inline-block;
-  border: 1px solid rgb(37, 84, 238);
+  color: rgb(37, 84, 238);
+  border: 2px solid rgb(37, 84, 238);
   border-radius: 10px;
-  padding: 8px 10px;
+  padding: 5px 7px;
+  margin-right: 5px;
   margin-bottom: 5px;
 }
 .profile-detail .interest > ul > strong {
   display: inline-block;
   color: black;
   font-size: 1rem;
+}
+.back-Btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: grey;
+}
+.back-Btn p {
+  display: inline-block;
+  font-size: 0.9rem;
 }

@@ -104,6 +104,14 @@ input[type="checkbox"]:checked + label {
   resize: none;
 }
 
+.project-name label {
+  display: block;
+  padding-bottom: 15px;
+}
+.project-name input {
+  width: 300px;
+}
+
 button.submit {
   float: right;
   font-size: 1.2rem;

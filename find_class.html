@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/069f611680.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="find.css"> 
+    <link rel="stylesheet" href="css/find.css"> 
     <title>LINKSSU</title>
 </head>
 <body>
@@ -17,8 +17,8 @@
         </div>
         <nav class="nav-bar">
             <ul class="nav">
-                <li><a href="find.html" class="active">팀원찾기</a></li>
-                <li><a href="recruit.html">팀원모집</a></li>
+                <li><a href="find_contest.html" class="active">팀원찾기</a></li>
+                <li><a href="recruit_contest.html">팀원모집</a></li>
                 <li><a href="contest.html">공모전</a></li>
             </ul>
             <ul class="icons">
@@ -34,314 +34,317 @@
     </header>
     <div class="main">
         <div class="title">
-            <a href="find.html">공모전 팀원찾기</a>
+            <a href="find_contest.html">공모전 팀원찾기</a>
             <a href="find_class.html" class="active">수업 팀원찾기</a>
         </div>   
-        <div class="filter">
-            <form name="major">
-                <label>
-                    <select id="major" onchange="if(this.value);">
-                        <option value=null selected>전공</option>
-                        <option value="글로벌미디어학부">글로벌미디어학부</option>
-                        <option value="경영학부">경영학부</option>
-                        <option value="글로벌통상학과">글로벌통상학과</option>
-                        <option value="사학과">사학과</option>
-                        <option value="소프트웨어학부">소프트웨어학부</option>
-                        <option value="유기신소재파이버공학과">유기신소재파이버공학과</option>
-                        <option value="일어일문학과">일어일문학과</option>
-                        <option value="중어중문학과">중어중문학과</option>
-                        <option value="컴퓨터학부">컴퓨터학부</option>
-                        <option value="평생교육학과">평생교육학과</option>
-                        <option value="행정학부">행정학부</option>
+        <div class="wrapper">
+            <div class="filter">
+                <form name="major">
+                    <label>
+                        <select id="major" onchange="if(this.value);">
+                            <option value=null selected>전공</option>
+                            <option value="영어영문학과">영어영문학과</option>
+                            <option value="글로벌미디어학부">글로벌미디어학부</option>
+                            <option value="경영학부">경영학부</option>
+                            <option value="글로벌통상학과">글로벌통상학과</option>
+                            <option value="사학과">사학과</option>
+                            <option value="소프트웨어학부">소프트웨어학부</option>
+                            <option value="유기신소재파이버공학과">유기신소재파이버공학과</option>
+                            <option value="일어일문학과">일어일문학과</option>
+                            <option value="중어중문학과">중어중문학과</option>
+                            <option value="컴퓨터학부">컴퓨터학부</option>
+                            <option value="평생교육학과">평생교육학과</option>
+                            <option value="행정학부">행정학부</option>
+                        </select>
+                    </label>
+                </form>
+        
+                <form name="Subject">
+                    <label>
+                        <select id="subject" onchange="if(this.value);">
+                            <option value=null>과목명</option>
+                            <option value="기업가정신과행동">기업가정신과행동</option>
+                            <option value="캡스톤디자인">캡스톤디자인</option>
+                            <option value="디지털스토리텔링">디지털스토리텔링</option>
+                        </select>
+                    </label>
+                </form>
+                <form name="skills">
+                    <select id="skills" onchange="if(this.value);">
+                        <option value=null>활용능력</option>
+                        <option value="PPT 제작">PPT제작</option>
+                        <option value="엑셀">엑셀</option>
+                        <option value="워드">워드</option>
+                        <option value="포토샵">포토샵</option>
+                        <option value="일러스트">일러스트</option>
                     </select>
-                </label>
-            </form>
-    
-            <form name="Subject">
-                <label>
-                    <select id="subject" onchange="if(this.value);">
-                        <option value=null>과목명</option>
-                        <option value="기업가정신과행동">기업가정신과행동</option>
-                        <option value="캡스톤디자인">캡스톤디자인</option>
-                        <option value="디지털스토리텔링">디지털스토리텔링</option>
-                    </select>
-                </label>
-            </form>
-            <form name="skills">
-                <select id="skills" onchange="if(this.value);">
-                    <option value=null>활용능력</option>
-                    <option value="PPT 제작">PPT제작</option>
-                    <option value="엑셀">엑셀</option>
-                    <option value="워드">워드</option>
-                    <option value="포토샵">포토샵</option>
-                    <option value="일러스트">일러스트</option>
-                </select>
-            </form>
-            <button class="search" onclick="a()">
-                검색
-            </button>
-        </div>
-        <div class="submit-btn">
-            <button><a href="submit.html">글 등록하기</a></button>
-        </div>
-        <div class="profile-container">
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                </form>
+                <button class="search" onclick="a()">
+                    검색
+                </button>
+            </div>
+            <div class="submit-btn">
+                <button><a href="submit_person.html">글 등록하기</a></button>
+            </div>
+            <div class="profile-container">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="profile-box">
-                <div class="wrap">
-                    <div class="person" onclick="detailProfile()">
-                        <div class="profile-pic">
-                            <img src="content/profile.png" alt="">
+                <div class="profile-box">
+                    <div class="wrap">
+                        <div class="person" onclick="detailProfile()">
+                            <div class="profile-pic">
+                                <img src="content/profile.png" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">홍길동</p>
+                                <p class="major">영어영문학과 4학년</p>
+                            </div>
                         </div>
-                        <div class="info">
-                            <p class="name">홍길동</p>
-                            <p class="major">영어영문학과 4학년</p>
+                        <div class="about" onclick="detailProfile()">
+                            <p class="class">#캡스톤디자인</p>
+                            <p class="interest">#PPT제작 #워드 #일러스트</p>
                         </div>
-                    </div>
-                    <div class="about" onclick="detailProfile()">
-                        <p class="class">#캡스톤디자인</p>
-                        <p class="interest">#PPT제작 #워드 #일러스트</p>
-                    </div>
-                    <div class="like">
-                        <i class="far fa-heart hearts"></i>
+                        <div class="like">
+                            <i class="far fa-heart hearts"></i>
+                        </div>
                     </div>
                 </div>
             </div>

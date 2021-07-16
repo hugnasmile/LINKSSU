@@ -25,8 +25,12 @@ fillHearts.forEach(function(hearts){
 })
 
 function detailProfile()  {
-    window.location.href = 'profile.html'
+    window.location.href = 'profile_person.html'
   };
+
+function detailTeamProfile()  {
+  window.location.href = 'profile_team.html'
+};
 
 
 var bigThumb = document.querySelector(".big");

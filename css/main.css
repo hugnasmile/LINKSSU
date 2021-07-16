@@ -1,13 +1,13 @@
-@import url(common.css);
+@import url("common.css");
 
 @font-face {
   font-family: "NanumBarunGothic";
-  src: url("fonts/NanumBarunGothic.ttf");
+  src: url("../fonts/NanumBarunGothic.ttf");
 }
 
 body {
   height: 100vh;
-  background-image: url("content/people-2557399_1920.jpg");
+  background-image: url("../content/people-2557399_1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }

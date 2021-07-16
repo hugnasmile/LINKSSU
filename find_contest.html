@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/069f611680.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="find.css"> 
+    <link rel="stylesheet" href="css/find.css"> 
     <title>LINKSSU</title>
 </head>
 <body>
@@ -17,8 +17,8 @@
         </div>
         <nav class="nav-bar">
             <ul class="nav">
-                <li><a href="find.html" class="active">팀원찾기</a></li>
-                <li><a href="recruit.html">팀원모집</a></li>
+                <li><a href="find_contest.html" class="active">팀원찾기</a></li>
+                <li><a href="recruit_contest.html">팀원모집</a></li>
                 <li><a href="contest.html">공모전</a></li>
             </ul>
             <ul class="icons">
@@ -27,14 +27,16 @@
                 <i class="far fa-heart"></i>
             </ul>
             <div class="name">
-                <i class="far fa-user-circle"></i>
-                <p>김숭실님</p>
+                <a href="#">
+                    <img src="content/profile4.png" alt="">
+                    <p>김숭실님</p>
+                </a>
             </div>
         </nav>
     </header>
     <div class="main">
         <div class="title">
-            <a href="find.html" class="active">공모전 팀원찾기</a>
+            <a href="find_contest.html" class="active">공모전 팀원찾기</a>
             <a href="find_class.html">수업 팀원찾기</a>
         </div>   
         <div class="wrapper">
@@ -43,6 +45,7 @@
                     <label>
                         <select id="major" onchange="if(this.value);">
                             <option value=null selected>전공</option>
+                            <option value="영어영문학과">영어영문학과</option>
                             <option value="글로벌미디어학부">글로벌미디어학부</option>
                             <option value="경영학부">경영학부</option>
                             <option value="글로벌통상학과">글로벌통상학과</option>
@@ -113,7 +116,7 @@
                 </button>
             </div>
             <div class="submit-btn">
-                <button><a href="submit.html">글 등록하기</a></button>
+                <button><a href="submit_person.html">글 등록하기</a></button>
             </div>
             <div class="profile-container">
                 <div class="profile-box">
