@@ -7,6 +7,7 @@
 }
 
 .main .wrapper {
+  position: relative;
   width: 80%;
   margin: 0 auto;
   margin-bottom: 100px;
@@ -62,10 +63,12 @@ button.search {
   border-radius: 10px;
   cursor: pointer;
 }
-.submit-btn button {
+.submit-btn {
   position: absolute;
-  right: 10%;
-  top: 24%;
+  right: 6%;
+  top: 4%;
+}
+.submit-btn button {
   font-size: 1rem;
   outline: none;
   border: none;
@@ -145,3 +148,74 @@ button.search {
   cursor: pointer;
   padding-top: 10px;
 }
+/* 
+@media all and (max-width: 1040px) and (min-width: 768px) {
+  .main .wrapper {
+    width: 100%;
+    padding: 0;
+  }
+  .profile-container {
+    justify-content: space-evenly;
+  }
+  .submit-btn button {
+    right: 2%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .main {
+    background-color: white;
+  }
+  .main .wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .title a {
+    font-size: 1.3rem;
+  }
+  .filter {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    background-color: rgb(243, 243, 243);
+  }
+  form select {
+    font-size: 1rem;
+    padding: 10px 5px;
+    background-image: url("../content/arrow-white.png");
+    background-size: 10px;
+    background-position: 80px;
+    background-repeat: no-repeat;
+    border-right: 1px solid white;
+    width: 100px;
+    border-radius: 10px;
+  }
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  form select option {
+    font-size: 0.9rem;
+  }
+  button.search {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+  }
+  .submit-btn button {
+    font-size: 0.9rem;
+    right: 0%;
+    top: 23.5%;
+    background-color: transparent;
+  }
+  .submit-btn button a {
+    color: gray;
+  }
+  .profile-container {
+    justify-content: center;
+    padding-top: 30px;
+  }
+} */
