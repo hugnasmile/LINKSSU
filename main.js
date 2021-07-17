@@ -1,20 +1,11 @@
-// var hearts = document.querySelectorAll('.fa-heart');
+var sidenav = document.getElementById("mySidenav");
 
-// for(var i = 1; i < hearts.length; i++){
-//   if(hearts.className="far fa-heart"){
-//     hearts[i].addEventListener("click",fillHeart);
-//   }
-//   else if(hearts.className="fas fa-heart"){
-//     hearts[i].addEventListener("click",emptyHeart);
-//   }
-// }
-
-// function fillHeart(){
-//   this.className = "fas fa-heart";
-// }
-// function emptyHeart(){
-//   this.className = "far fa-heart";
-// }
+function openNav(){
+  sidenav.style.width="200px";
+}
+function closeNav(){
+  sidenav.style.width="0";
+}
 
 var fillHearts = document.querySelectorAll('.hearts');
 
@@ -50,6 +41,7 @@ function changeThumb(){
 
 var target = document.getElementById("target");
 
+
         function deleteToDo(event){
             const btn = event.target; // 현재 클릭한 버튼의 정보 연결
             const li = btn.parentNode; // 현재 클릭한 버튼의 부모정보 -> 우리는 구조상 <li>내부에 <button>이 있으므로 부모<li>를 연결
@@ -62,12 +54,16 @@ var target = document.getElementById("target");
             var keyword = document.getElementById("keyword").value;
             var addkeyword = document.createTextNode(keyword);
             const delBtn = document.createElement("button");
-            delBtn.innerText = "x";
-            delBtn.addEventListener("click",deleteToDo);
-            li.appendChild(addkeyword); // li 자식으로 = li 안에 text 추가
-            li.appendChild(delBtn);
-            target.appendChild(li);
-            keyword.value = "";
+
+            if(keyword==""){
+              alert("키워드를 입력하세요");
+            }
+            else{
+              delBtn.innerText = "x";
+              delBtn.addEventListener("click",deleteToDo);
+              li.appendChild(addkeyword); // li 자식으로 = li 안에 text 추가
+              li.appendChild(delBtn);
+              target.appendChild(li);
+            }
         };
 
-        
