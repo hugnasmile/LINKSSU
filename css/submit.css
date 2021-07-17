@@ -138,9 +138,9 @@ input[type="checkbox"]:checked + label {
 
 .add-keyword input[type="button"] {
   font-size: 1.1rem;
-  color: rgb(37, 84, 238);
+  color: rgb(133, 133, 133);
   background-color: white;
-  border: 2px solid rgb(37, 84, 238);
+  border: 2px solid rgb(94, 94, 94);
   padding: 0 3px;
   cursor: pointer;
 }
