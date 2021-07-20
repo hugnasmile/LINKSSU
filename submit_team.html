@@ -19,7 +19,7 @@
             <ul class="nav">
                 <li><a href="find_contest.html">팀원찾기</a></li>
                 <li><a href="recruit_contest.html" class="active">팀원모집</a></li>
-                <li><a href="contest.html">공모전</a></li>
+                <li><a href="#">공모전</a></li>
             </ul>
             <ul class="icons">
                 <i class="far fa-comment-alt"></i>
@@ -85,12 +85,12 @@
                     <input type="checkbox" name="skills" id="Back-End"><label for="Back-End">Back-End</label>
                     <input type="checkbox" name="skills" id="GitHub"><label for="GitHub">GitHub</label>
                     <input type="checkbox" name="skills" id="영상편집"><label for="영상편집">영상편집</label>
-                    <ul id="target"></ul>
-                    <div class="add-keyword">
+                    <ul id="new-keyword-list"></ul>
+                    <form class="keyword-form">
                         <label for="keyword">키워드 추가하기</label>
-                        <input type="text" id="keyword">
-                        <input type="button" onclick="callAppendChild()" value="+">
-                    </div>
+                        <input required type="text" id="keyword">
+                        <button>+</button>
+                    </form>
                 </li>
                 <li class="interest">
                     <label for="interest">관심분야</label>
@@ -113,6 +113,7 @@
             <button class="submit"><a href="recruit_contest.html">등록하기</a></button>         
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="js/profilepic.js"></script>
+    <script src="js/keyword.js"></script>
     </body>
     </html>
