@@ -50,10 +50,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
-.login-box .input-area .login-Btn a {
+.login-box .input-area .login-Btn {
   display: inline-block;
   padding: 10px;
-  width: 90%;
   color: white;
 }
 
@@ -63,37 +62,4 @@
   width: 70%;
   margin: 0 auto;
   margin-top: 10px;
-}
-
-/* -----media query----- */
-
-@media all and (max-width: 767px) {
-  .main .wrapper {
-    background-color: white;
-  }
-  .main .wrapper .login-box {
-    padding: 0;
-    margin: 0;
-    width: 90%;
-  }
-  .main .login-box .input-area {
-    display: flex;
-    flex-direction: column;
-  }
-  .login-box .input-area .input-box {
-    display: flex;
-    flex-direction: column;
-  }
-  .login-box .input-area .input-box input {
-    width: auto;
-    margin-bottom: var(--small-padding);
-  }
-  .login-box .input-area .login-Btn {
-    margin: 0;
-  }
-  .login-box .input-area .login-Btn button {
-    width: 100%;
-    height: auto;
-    padding: calc((var(--small-padding)) / 2) 0;
-  }
 }

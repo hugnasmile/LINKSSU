@@ -53,9 +53,10 @@ label {
   display: inline-block;
 }
 
-form {
+.mbti form {
   display: inline-block;
 }
+
 form select {
   outline: none;
   font-size: 1.1rem;
@@ -112,11 +113,11 @@ input[type="checkbox"]:checked + label {
   width: 300px;
 }
 
-#target,
-#target li {
+#new-keyword-list,
+#new-keyword-list li {
   display: inline-block;
 }
-#target li {
+#new-keyword-list li {
   font-size: 1.1rem;
   color: rgb(37, 84, 238);
   border: 2px solid rgb(37, 84, 238);
@@ -127,7 +128,7 @@ input[type="checkbox"]:checked + label {
   cursor: pointer;
 }
 
-#target li button {
+#new-keyword-list li button {
   font-size: 1.1rem;
   border: none;
   outline: none;
@@ -136,7 +137,7 @@ input[type="checkbox"]:checked + label {
   cursor: pointer;
 }
 
-.add-keyword input[type="button"] {
+.keyword-form button {
   font-size: 1.1rem;
   color: rgb(133, 133, 133);
   background-color: white;
